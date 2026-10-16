@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { FiltreCoursPipe } from '../../pipes/filtre-cour-pipe';
 import { TriCoursPipe } from '../../pipes/tri-cours-pipe';
 import { PlacesRestantesPipe } from '../../pipes/places-restantes-pipe';
+import { TronquerPipe } from '../../pipes/tronquer-pipe';
 
 export interface Cours {
 titre: string;
@@ -19,7 +20,8 @@ places: number;
     FiltreCoursPipe,
     TriCoursPipe,
     UpperCasePipe,
-    PlacesRestantesPipe
+    PlacesRestantesPipe,
+    TronquerPipe
   ],
   
   templateUrl: './liste-cours.html',
