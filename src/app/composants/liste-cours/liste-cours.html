@@ -11,7 +11,7 @@
 (click)="selectionner(c)">
 <h2>{{ c.titre }}</h2>
 <p>Durée : {{ c.duree }}</p>
-<p>Places disponibles : {{ c.places }}</p>
+<p>{{ c.places | placesRestantes }}</p>
 @switch (c.categorie) {
 @case ('Front-end') { <span class="badge badge--frontend">{{ c.categorie |
 uppercase }}</span> }
